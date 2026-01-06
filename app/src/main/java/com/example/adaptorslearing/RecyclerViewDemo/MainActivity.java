@@ -1,0 +1,55 @@
+package com.example.adaptorslearing.RecyclerViewDemo;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.adaptorslearing.R;
+
+public class MainActivity extends AppCompatActivity {
+
+    String [] names = {"Lions" , "Bears" , "Dogs" , "Cats" , "Elephants" , "Lions" , "Bears" , "Dogs" , "Cats" , "Elephants" ,"Bears" , "Dogs" , "Cats" , "Elephants"};
+    int [] images = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five, R.drawable.six, R.drawable.seven,
+            R.drawable.lions, R.drawable.nine, R.drawable.ten, R.drawable.eleven, R.drawable.twelve,
+            R.drawable.one, R.drawable.two,};
+
+    RecyclerView recycler_view;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        enableToolbar();
+
+        recycler_view = findViewById(R.id.recycler_view);
+
+        MyAdapter myAdapter = new MyAdapter(images , names);
+        recycler_view.setLayoutManager(new LinearLayoutManager(this));
+        recycler_view.setAdapter(myAdapter);
+
+    }
+
+    private void enableToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setTitle("Animals Gallery");
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowHomeEnabled(true);
+        }
+
+        if (toolbar.getNavigationIcon() != null) {
+            toolbar.setTitleTextColor(Color.WHITE);
+            // Use a custom drawable
+//            getSupportActionBar().setHomeAsUpIndicator(R.drawable.home);
+            toolbar.getNavigationIcon().setTint(Color.WHITE);
+        }
+    }
+}
