@@ -5,8 +5,10 @@ import android.os.Bundle;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.example.adaptorslearing.R;
 
@@ -29,8 +31,38 @@ public class MainActivity extends AppCompatActivity {
         recycler_view = findViewById(R.id.recycler_view);
 
         MyAdapter myAdapter = new MyAdapter(images , names);
+
+        // FOR VERTICAL VIEW
+
         recycler_view.setLayoutManager(new LinearLayoutManager(this));
         recycler_view.setAdapter(myAdapter);
+
+        // For Horizontal View
+
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+//        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+//        recycler_view.setLayoutManager(layoutManager);
+//        recycler_view.setAdapter(myAdapter);
+
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this , LinearLayoutManager.HORIZONTAL, false);
+//        recycler_view.setLayoutManager(layoutManager);
+//        recycler_view.setAdapter(myAdapter);
+
+//
+//        GridLayoutManager gridLayoutManager = new GridLayoutManager(this , 2);
+//        recycler_view.setLayoutManager(gridLayoutManager);
+//        recycler_view.setAdapter(myAdapter);
+
+//        GridLayoutManager gridLayoutManager = new GridLayoutManager(this ,2);
+//        gridLayoutManager.setOrientation(GridLayoutManager.HORIZONTAL);
+//        recycler_view.setLayoutManager(gridLayoutManager);
+//        recycler_view.setAdapter(myAdapter);
+
+
+        //For adjust differ dimensions in proper formate
+//        StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2 , StaggeredGridLayoutManager.VERTICAL);
+//        recycler_view.setLayoutManager(staggeredGridLayoutManager);
+//        recycler_view.setAdapter(myAdapter);
 
     }
 
