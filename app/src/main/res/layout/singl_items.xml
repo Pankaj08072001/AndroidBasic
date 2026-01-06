@@ -12,11 +12,21 @@
         android:gravity="center_vertical"
         android:padding="10dp">
 
-        <ImageView
+<!--        <ImageView-->
+<!--            android:id="@+id/img"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="80dp"-->
+
+<!--            android:src="@drawable/menu_profile" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img"
-            android:layout_width="60dp"
+            android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/menu_profile" />
+            android:src="@drawable/circle_green"
+            android:scaleType="centerCrop"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@android:color/black" />
 
         <TextView
             android:id="@+id/txtName"
