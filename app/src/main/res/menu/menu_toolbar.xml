@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_home_search"
+        android:title="action_search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/allpdfs"
+        android:title="AllPDf"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,9 +1,13 @@
 package com.example.adaptorslearing.RecyclerViewDemo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.widget.Button;
+
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.ButtonBarLayout;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,8 +18,8 @@ import com.example.adaptorslearing.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    String [] names = {"Lions" , "Bears" , "Dogs" , "Cats" , "Elephants" , "Lions" , "Bears" , "Dogs" , "Cats" , "Elephants" ,"Bears" , "Dogs" , "Cats" , "Elephants"};
-    int [] images = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five, R.drawable.six, R.drawable.seven,
+    String[] names = {"Lions", "Bears", "Dogs", "Cats", "Elephants", "Lions", "Bears", "Dogs", "Cats", "Elephants", "Bears", "Dogs", "Cats", "Elephants"};
+    int[] images = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five, R.drawable.six, R.drawable.seven,
             R.drawable.lions, R.drawable.nine, R.drawable.ten, R.drawable.eleven, R.drawable.twelve,
             R.drawable.one, R.drawable.two,};
 
@@ -30,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         recycler_view = findViewById(R.id.recycler_view);
 
-        MyAdapter myAdapter = new MyAdapter(images , names);
+        MyAdapter myAdapter = new MyAdapter(images, names);
 
         // FOR VERTICAL VIEW
 
