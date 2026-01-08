@@ -67,23 +67,4 @@ public class MainActivity2 extends AppCompatActivity {
         return true;
     }
 
-
-    // Handle toolbar icon clicks
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == android.R.id.home) {
-            finish(); // back arrow clicked
-            return true;
-        } else if (id == R.id.action_search) {
-            Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show();
-            return true;
-        } else if (id == R.id.action_settings) {
-            Toast.makeText(this, "Settings clicked", Toast.LENGTH_SHORT).show();
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
