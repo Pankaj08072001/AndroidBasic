@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdaptorsLearning">
         <activity
-            android:name=".TestingDesign.MainActivity3"
+            android:name=".TestingDesign.TestActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

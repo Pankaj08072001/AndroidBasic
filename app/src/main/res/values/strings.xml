@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AdaptorsLearning</string>
+    <string name="navigation_view" />
 </resources>
