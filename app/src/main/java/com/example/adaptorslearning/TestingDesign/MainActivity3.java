@@ -1,4 +1,4 @@
-package com.example.adaptorslearing.TestingDesign;
+package com.example.adaptorslearning.TestingDesign;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.adaptorslearing.R;
+import com.example.adaptorslearning.R;
 import com.google.android.material.appbar.MaterialToolbar;
 
 public class MainActivity3 extends AppCompatActivity {

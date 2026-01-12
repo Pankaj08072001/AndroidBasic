@@ -1,4 +1,4 @@
-package com.example.adaptorslearing;
+package com.example.adaptorslearning;
 
 import android.content.Context;
 

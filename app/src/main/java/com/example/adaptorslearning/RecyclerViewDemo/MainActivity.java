@@ -1,20 +1,15 @@
-package com.example.adaptorslearing.RecyclerViewDemo;
+package com.example.adaptorslearning.RecyclerViewDemo;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.widget.Button;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.ButtonBarLayout;
 import androidx.appcompat.widget.Toolbar;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import com.example.adaptorslearing.R;
+import com.example.adaptorslearning.R;
 
 public class MainActivity extends AppCompatActivity {
 
