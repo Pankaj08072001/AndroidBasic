@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="Login" />
+
+        <item
+            android:id="@+id/nav_day_night"
+            android:icon="@drawable/ic_day_night"
+            android:title="Night Mode" />
+
+        <item
+            android:id="@+id/nav_leader_board"
+            android:icon="@drawable/ic_profile_menu_leaderboard"
+            android:title="LeaderBoard" />
+
+        <item
+            android:id="@+id/nav_leader_performance"
+            android:icon="@drawable/ic_profile_menu_performance"
+            android:title="Performance" />
+
+        <item
+            android:id="@+id/nav_leader_history"
+            android:icon="@drawable/ic_profile_menu_activities"
+            android:title="Activities" />
+
+        <item
+            android:id="@+id/nav_downloaded_books"
+            android:icon="@drawable/ic_profile_menu_downloaded_books"
+            android:title="Downloaded Books" />
+
+        <item
+            android:id="@+id/nav_bookmark_pdf"
+            android:icon="@drawable/ic_profile_menu_pdf_bookmarks"
+            android:title="Pdf Bookmarks" />
+
+        <item
+            android:id="@+id/nav_bookmark_que"
+            android:icon="@drawable/ic_profile_menu_question_bookmark"
+            android:title="Que Bookmark" />
+
+        <item
+            android:id="@+id/nav_bookmark"
+            android:icon="@drawable/ic_profile_menu_article_booksmark"
+            android:title="Article Bookmarks" />
+
+        <item
+            android:id="@+id/nav_update"
+            android:title="Update App"
+            android:icon="@drawable/ic_profile_menu_share"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_more_apps"
+            android:title="More Apps" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:title="App Share" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/privacy_policy"
+            android:icon="@drawable/ic_profile_menu_rateus"
+            android:title="Privacy Policy" />
+
+        <item
+            android:id="@+id/nav_app_settings"
+            android:title="Settings" />
+    </group>
+
+</menu>
