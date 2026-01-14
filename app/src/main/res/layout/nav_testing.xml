@@ -6,6 +6,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:openDrawer="start"
     android:fitsSystemWindows="true">
 
     <!-- MAIN CONTENT -->
@@ -23,12 +24,13 @@
             app:titleTextColor="@color/black" />
 
         <!-- Your Screen Content -->
+
+        <!-- Example Button -->
         <FrameLayout
             android:id="@+id/content_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <!-- Example Button -->
         <Button
             android:id="@+id/openDrawerBtn"
             android:layout_width="wrap_content"
