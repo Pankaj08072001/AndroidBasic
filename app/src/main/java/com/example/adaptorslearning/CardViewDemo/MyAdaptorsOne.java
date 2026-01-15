@@ -3,17 +3,19 @@ package com.example.adaptorslearning.CardViewDemo;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import com.example.adaptorslearning.R;
+
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 public class MyAdaptorsOne extends BaseAdapter {
     Context context;
-    int [] data;
+    int[] data;
     LayoutInflater inflater;
 
-    public MyAdaptorsOne(Context context , int [] data){
+    public MyAdaptorsOne(Context context, int[] data) {
         this.context = context;
         this.data = data;
         inflater = LayoutInflater.from(context);
@@ -37,8 +39,8 @@ public class MyAdaptorsOne extends BaseAdapter {
     @Override
     public View getView(int position, View view, ViewGroup parent) {
 
-        if(view == null){ // important improvement
-            view = inflater.inflate(R.layout.ui_view_one , parent, false);
+        if (view == null) { // important improvement
+            view = inflater.inflate(R.layout.ui_view_one, parent, false);
         }
 
         ImageView imageView = view.findViewById(R.id.image_one);

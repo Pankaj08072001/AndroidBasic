@@ -13,10 +13,10 @@ import com.example.adaptorslearning.R;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
-    int [] arr_imgs ;
-    String [] arr_names;
+    int[] arr_imgs;
+    String[] arr_names;
 
-    public MyAdapter(int [] arr_imgs , String [] arr_names){
+    public MyAdapter(int[] arr_imgs, String[] arr_names) {
         this.arr_imgs = arr_imgs;
         this.arr_names = arr_names;
     }
@@ -44,6 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         private ImageView img;
         private TextView name;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 

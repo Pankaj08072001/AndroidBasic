@@ -31,12 +31,14 @@ public class DrawerLayoutDemoOne extends AppCompatActivity {
         setupNavigation();
 
     }
-// init view catch id
+
+    // init view catch id
     private void intiView() {
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
         toolbar = findViewById(R.id.toolbarD);
     }
+
     // set toolbar
     private void setToolbar() {
         setSupportActionBar(toolbar);
@@ -83,6 +85,5 @@ public class DrawerLayoutDemoOne extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }

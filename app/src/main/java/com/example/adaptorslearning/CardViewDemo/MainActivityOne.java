@@ -3,7 +3,9 @@ package com.example.adaptorslearning.CardViewDemo;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.GridView;
+
 import com.example.adaptorslearning.R;
+
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,8 +16,9 @@ public class MainActivityOne extends AppCompatActivity {
 
     // Create array for images
     int[] animals_arr = {R.drawable.one, R.drawable.two, R.drawable.three, R.drawable.four, R.drawable.five, R.drawable.six, R.drawable.seven,
-             R.drawable.nine, R.drawable.ten, R.drawable.eleven, R.drawable.twelve,
-          };
+            R.drawable.nine, R.drawable.ten, R.drawable.eleven, R.drawable.twelve,
+    };
+
     //  default method
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +47,7 @@ public class MainActivityOne extends AppCompatActivity {
 
 
     // for grid view data
-    private void initViewsGridVeiw(){
+    private void initViewsGridVeiw() {
         gridView_one = (GridView) findViewById(R.id.gridview_one);
         MyAdaptorsOne myAdaptorsOne = new MyAdaptorsOne(this, animals_arr);
         gridView_one.setAdapter(myAdaptorsOne);
