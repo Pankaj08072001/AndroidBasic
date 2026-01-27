@@ -2,4 +2,6 @@
     <string name="app_name">AdaptorsLearning</string>
     <string name="navigation_view" />
     <string name="open_menu">Open Menu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

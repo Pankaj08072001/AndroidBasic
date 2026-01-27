@@ -12,6 +12,7 @@ materialVersion = "1.11.0"
 recyclerview = "1.4.0"
 cardview = "1.0.0"
 filamentAndroid = "1.17.1"
+fragment = "1.8.9"
 
 [libraries]
 circleimageview = { module = "de.hdodenhof:circleimageview", version.ref = "circleimageview" }
@@ -26,6 +27,7 @@ material-v1110 = { module = "com.google.android.material:material", version.ref 
 recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 filament-android = { group = "com.google.ar.sceneform", name = "filament-android", version.ref = "filamentAndroid" }
+fragment = { group = "androidx.fragment", name = "fragment", version.ref = "fragment" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
